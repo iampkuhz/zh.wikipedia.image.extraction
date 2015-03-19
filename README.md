@@ -5,7 +5,7 @@
 
 本程序可以自动抓取中文维基百科信息框中的图片链接(以及图片大小), 比如演员[张家辉](http://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AE%B6%E8%BC%9D)的维基百科主页
 
-![张家辉](http://github.com/iampkuhz/zh.wikipedia.image.extraction/zhangjiahui.png)
+![张家辉](https://dn-iampkuhz.qbox.me/github/zh.wikipedia.image.extraction/zhangjiahui.png)
 
 在搜索结果WikiIMG文件中对应一条记录:
 
