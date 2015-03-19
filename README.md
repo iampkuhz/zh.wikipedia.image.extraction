@@ -16,7 +16,7 @@
 ## 使用说明
 
 1. 可以直接使用我已经抽取好的结果[WikiIMG](http://github.com/iampkuhz/zh.wikipedia.image.extraction/data/WikiIMG)
-2. 或者运行项目根目录下面的[zh.wikipedia.img.extraction.jar](http://github.com/iampkuhz/zh.wikipedia.image.extraction/zh.wikipedia.img.extraction.jar)
+2. 或者运行项目根目录下面的[zh.wikipedia.img.extraction.jar](https://github.com/iampkuhz/zh.wikipedia.image.extraction/blob/master/zh.wikipedia.img.extraction.jar)
 
 ```
 para format:
