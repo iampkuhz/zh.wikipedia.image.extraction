@@ -1,0 +1,1 @@
+# zh.wikipedia.image.extraction

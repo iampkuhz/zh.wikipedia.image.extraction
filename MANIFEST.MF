@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: lib/htmllexer.jar lib/htmlparser.jar lib/ZHConverter.jar
+Main-Class: Entrance
+

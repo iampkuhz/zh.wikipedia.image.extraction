@@ -1,0 +1,26 @@
+package com.hz;
+
+public class myElement {
+	public String context;
+	public String link;
+	
+	public myElement(String iCont, String iLink)
+	{
+		context = iCont;
+		if(iLink == null)
+			System.out.println("element without link!");
+		link = iLink;
+	}
+	public myElement(String iCont)
+	{
+		context = iCont;
+		link = null;
+	}
+
+	public String toString()
+	{
+		String result = "";
+		result += "context:" + context + "; " + "link:" + link;
+		return result;
+	}
+}
