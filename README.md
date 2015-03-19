@@ -8,14 +8,14 @@
 ![张家辉](https://dn-iampkuhz.qbox.me/github/zh.wikipedia.image.extraction/zhangjiahui.png)
 
 在搜索结果WikiIMG文件中对应一条记录:
-
+<br />
 > 472824  张家辉  upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Cheung_Ka_Fai_2010.jpg/240px-Cheung_Ka_Fai_2010.jpg   240     322
 
 表示张家辉的编号是472824, 维基百科中使用的链接如上, 图片的宽240像素, 高322像素
 
 ## 使用说明
 
-1. 可以直接使用我已经抽取好的结果[WikiIMG](http://github.com/iampkuhz/zh.wikipedia.image.extraction/data/WikiIMG)
+1. 可以直接使用我已经抽取好的结果[WikiIMG](https://github.com/iampkuhz/zh.wikipedia.image.extraction/blob/master/WikiIMG)
 2. 或者运行项目根目录下面的[zh.wikipedia.img.extraction.jar](https://github.com/iampkuhz/zh.wikipedia.image.extraction/blob/master/zh.wikipedia.img.extraction.jar)
 
 ```
@@ -32,22 +32,22 @@ java ZhwikiIMGExtractor.jar htmlFolderPath status dataFolderPath outputFilePath 
 ```
 
 输出:
-> Hello!
-> this program aims at automatically extracting entities' images inside Infoboxes in chinese wikipedia. the Infobox list is already filtered by myself using various rules. I hope you can enjoying using it!
-> hanzhe(iampkuhz.cn)
-> infoboxIdList size:378269
-> NoInfoboxIdList size:1
-> Id2TitsMap.size:977570
-> InfoboxNameList size:7228
-> TitsIdMap.size:1348673
-> Extract:5 folders passed, 3605 pages passed, 845 img url extracted!	 cost:57sec
-> Extract:10 folders passed, 7293 pages passed, 1310 img url extracted!	 cost:1min29sec
-> Extract:15 folders passed, 10898 pages passed, 1695 img url extracted!	 cost:2min2sec
-> Extract:20 folders passed, 14503 pages passed, 2908 img url extracted!	 cost:2min37sec
-> Extract:25 folders passed, 18108 pages passed, 3827 img url extracted!	 cost:3min13sec
-> Extract:30 folders passed, 21713 pages passed, 4830 img url extracted!	 cost:3min48sec
-> Extract:35 folders passed, 25318 pages passed, 5803 img url extracted!	 cost:4min26sec
-> Extract:40 folders passed, 29002 pages passed, 6306 img url extracted!	 cost:4min59sec
+> Hello!<br />
+> this program aims at automatically extracting entities' images inside Infoboxes in chinese wikipedia. the Infobox list is already filtered by myself using various rules. I hope you can enjoying using it!<br />
+> hanzhe(iampkuhz.cn)<br />
+> infoboxIdList size:378269<br />
+> NoInfoboxIdList size:1<br />
+> Id2TitsMap.size:977570<br />
+> InfoboxNameList size:7228<br />
+> TitsIdMap.size:1348673<br />
+> Extract:5 folders passed, 3605 pages passed, 845 img url extracted!	 cost:57sec<br />
+> Extract:10 folders passed, 7293 pages passed, 1310 img url extracted!	 cost:1min29sec<br />
+> Extract:15 folders passed, 10898 pages passed, 1695 img url extracted!	 cost:2min2sec<br />
+> Extract:20 folders passed, 14503 pages passed, 2908 img url extracted!	 cost:2min37sec<br />
+> Extract:25 folders passed, 18108 pages passed, 3827 img url extracted!	 cost:3min13sec<br />
+> Extract:30 folders passed, 21713 pages passed, 4830 img url extracted!	 cost:3min48sec<br />
+> Extract:35 folders passed, 25318 pages passed, 5803 img url extracted!	 cost:4min26sec<br />
+> Extract:40 folders passed, 29002 pages passed, 6306 img url extracted!	 cost:4min59sec<br />
 > ...
 
 
