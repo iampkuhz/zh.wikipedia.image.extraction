@@ -39,7 +39,7 @@ public class Outputer {
 	public void append(String oneLineWithEnter){
 		sb.append(oneLineWithEnter);
 		lineNr ++;
-		if(lineNr % 1000 == 0){
+		if(lineNr % 100 == 0){
 			add2File();
 			sb.setLength(0);
 		}

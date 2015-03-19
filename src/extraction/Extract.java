@@ -94,20 +94,24 @@ public class Extract {
 	private static String htmlFolder;
 	private static int subFolderNr;
 	private static long stTime;
+	private static int Nr;
 	
 	private static void ScanEntityList(String id2titFile, String htmlFolder1) throws NumberFormatException, IOException {
 		htmlFolder = htmlFolder1;
 		subFolderNr = 1;
 		stTime = System.currentTimeMillis();
 		
-		uFunc.deleteFolder(htmlFolder1);
+		if(saveFile)
+			uFunc.deleteFolder(htmlFolder1);
 		
 		BufferedReader br = uFunc.getBufferedReader(id2titFile);
 		
 		String oneline = "";
+		Nr = 0;
 		
 		while((oneline = br.readLine()) != null)
 		{
+			Nr ++;
 			int id = Integer.parseInt(oneline.split("\t")[0]);
 			
 			String html = ExtractOneFile(id, "http://zh.wikipedia.org/wiki?curid=" + id);
@@ -125,7 +129,7 @@ public class Extract {
 					else{
 						if(folder.listFiles().length > 10)
 						{
-							uFunc.alert(c, subFolderNr + " folders passed, " + subFolderNr + " pages passed, " + out.recordNr() + " img url extracted!\t cost:" + uFunc.GetTime(System.currentTimeMillis() - stTime));
+							uFunc.alert(c, subFolderNr + " folders passed, " + Nr + " pages passed, " + out.recordNr() + " img url extracted!\t cost:" + uFunc.GetTime(System.currentTimeMillis() - stTime));
 							subFolderNr ++;
 							continue;
 						}
@@ -135,6 +139,7 @@ public class Extract {
 				uFunc.deleteFile(htmlFolder + subFolderNr + "/" + id, false);
 				uFunc.addFile(html, htmlFolder + subFolderNr + "/" + id); 
 			}
+			
 		}
 	}
 
@@ -203,6 +208,11 @@ public class Extract {
 		String info = pageid + "\t" + Entity.getTitle(pageid) + "\t" + url + "\t" + 
 				tag.getAttribute("WIDTH") + "\t" + tag.getAttribute("HEIGHT") + "\n";
 		out.append(info);
+		
+		if(saveFile == false && out.recordNr() % 10 == 0)
+		{
+			uFunc.alert(c, out.recordNr() + " images extracted, " + Nr + " entities passed!");
+		}
 		
 		lastId = pageid;
 	}
