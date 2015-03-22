@@ -12,6 +12,8 @@
 > 472824  张家辉  upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Cheung_Ka_Fai_2010.jpg/240px-Cheung_Ka_Fai_2010.jpg   240     322
 
 表示张家辉的编号是472824, 维基百科中使用的链接如上, 图片的宽240像素, 高322像素
+![](upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Cheung_Ka_Fai_2010.jpg/240px-Cheung_Ka_Fai_2010.jpg)
+
 
 ## 使用说明
 
